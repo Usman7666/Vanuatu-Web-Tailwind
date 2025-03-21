@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <div class="h-full w-full max-w-[1440px] mx-auto relative">
+      <header class="relative">
+        <!-- NavBar -->
+        <nav id="Nav-bar"
+          class=" flex items-center justify-between sm:p-5 p-2 md:px-8"
+        >
+          <a href="/index.html">
+            <div class="flex items-center gap-2">
+              <img
+                class="sm:w-8 sm:h-12 w-5"
+                src="./images/logo.png"
+                alt="Logo"
+              />
+              <h1 class="font-semibold text-sm sm:leading-snug leading-3">
+                vanuatu <br />
+                cbi <br />
+                passport
+              </h1>
+            </div>
+          </a>
+
+          <div class="hidden md:block">
+            <ul
+              class="flex bg-gray1 w-[408px] h-9 justify-evenly rounded-full items-center text-gray1/40"
+            >
+              <li
+                class="hover:text-black transition-all cursor-pointer duration-200"
+              >
+                <a href="/index.html">Home</a>
+              </li>
+              <li
+                class="hover:text-black transition-all cursor-pointer duration-200"
+              >
+                <a href="/ApplicationForm.html">Citizenship</a>
+              </li>
+              <li
+                class="hover:text-black transition-all cursor-pointer duration-200"
+              >
+                <a href="/Lawyers.html">Blog</a>
+              </li>
+              <li
+                class="hover:text-black transition-all cursor-pointer duration-200"
+              >
+                <a href="/AboutUs.html"> About</a>
+              </li>
+              <li
+                class="hover:text-black transition-all cursor-pointer duration-200"
+              >
+                <a href="/ContactUs.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sm:w-40 sm:h-10 h-7 w-28">
+            <ul class="flex sm:gap-5 gap-2">
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/twittericon.png"
+                    alt="Icon"
+                    height="40px"
+                    width="40px"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/wattsappicon.png"
+                    alt="Icon"
+                    height="40px"
+                    width="40px"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/messageicon.png"
+                    alt="Icon"
+                    height="40px"
+                    width="40px"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Menu Bar Mobile -->
+          <a href="#" class="block md:hidden">
+            <div class="bg-gray2 rounded-2xl flex items-center p-2 gap-1">
+              <h4 class="text-[10px] font-[500]">Menu</h4>
+              <button id="menu-btn"><img class="w-4 h-2" src="./images/menu.png" alt="" /></button>
+            </div>
+          </a>
+        </nav>
+          <!-- DropDownMenu -->
+          <div id="dropdown-menu" class="bg-[#013220E5]/90 backdrop-blur absolute w-full min-h-[566px] h-full hidden flex-col">
+            <div class="flex items-center justify-between p-3">
+             <img src="./images/mobilemenulogo.png" height="30" width="70" alt="Logo">
+              <div id="" class="bg-gray2   rounded-2xl flex items-center p-2 gap-1">
+                <h3 class="text-[10px] font-[500]">Close</h3>
+                <button id="close-btn"><img class="w-3 h-3" src="./images/closeicon.png" alt=""></button>
+              </div>
+            </div>
+            
+            <ul class="flex flex-col items-center justify-center m-auto gap-7 text-white">
+              <li class="hover:text-darkyellow cursor-pointer text-3xl"><a href="/index.html">Home</a></li>
+              <li class="hover:text-darkyellow cursor-pointer text-3xl"><a href="/ApplicationForm.html">Citizenship</a></li>
+              <li class="hover:text-darkyellow cursor-pointer text-3xl"><a href="/Lawyers.html">Blog</a></li>
+              <li class="hover:text-darkyellow cursor-pointer text-3xl"><a href="/AboutUs.html">About Us</a></li>
+              <li class="hover:text-darkyellow cursor-pointer text-3xl"><a href="/ContactUs.html">Contact</a></li>
+            </ul>
+          
+          </div>
+        <div class="flex justify-between items-center">
+          <!-- Desktop image1 -->
+          <img
+            src="./images/Applicationform/img1.png"
+            class="md:block hidden lg:h-[564px] lg:w-[375px] w-48 h-96"
+            alt=""
+          />
+          <!-- mobile image1 -->
+          <img
+            class="md:hidden top-20 absolute max-h-56 max-w-[120]"
+            src="./images/Applicationform/mobile1.png"
+            alt=""
+          />
+
+          <!-- Content -->
+          <div class="text-center w-[256px] md:space-y-10 sm:w-[500px] mx-auto">
+            <h1
+              class="sm:text-7xl mdsm:text-5xl text-3xl font-semibold md:font-bold md:leading-[65px]"
+            >
+              Vanuatu Citizenship<br />
+              <span class="text-darkyellow italic">Application <br />Form</span>
+            </h1>
+            <div class="pt-10 space-y-5">
+              <p class="text-sm">
+                If you would like to apply for the Vanuatu Citizenship by
+                Investment Program, please use the form below.
+              </p>
+
+              <div class="flex items-center justify-center">
+                <button
+                  class="md:h-14 h-9 md:min-w-80 w-60 rounded-full bg-darkyellow text-white transition-all duration-200 hover:text-yellow-100 font-semibold md:text-3xl text-sm text-center"
+                >
+                  Get a Consultation
+                </button>
+
+                <div
+                  class="border transition-all duration-200 cursor-pointer border-darkyellow hover:bg-yellow-500 rounded-full md:h-14 md:w-14 h-9 w-9 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      class=""
+                      src="./images/headerimages/arrowicon.png"
+                      alt="Icon"
+                      height="24px"
+                      width="24px"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Desktop 2 -->
+          <img
+            class="lg:h-[397px] md:block hidden lg:w-[293px] md:h-[300px] w-40"
+            src="./images/Applicationform/img2.png"
+            alt=""
+          />
+          <!-- Mobile image2 -->
+          <img
+            class="md:hidden right-1 top-32 absolute  max-w-24 max-h-48"
+            src="./images/Applicationform/mobile2.png"
+            alt=""
+          />
+        </div>
+      </header>
+
+      <section>
+        <div
+          class="flex flex-col space-y-4 w-full max-w-[900px] mx-auto px-6 pt-10 pb-32"
+        >
+          <input
+            type="text"
+            placeholder="Name*"
+            class="border-black/50 border rounded-full p-4"
+          />
+          <input
+            type="text"
+            placeholder="Surname*"
+            class="border-black/50 border rounded-full p-4"
+          />
+          <input
+            type="text"
+            placeholder="Nationality"
+            class="border-black/50 border rounded-full p-4"
+          />
+          <input
+            type="text"
+            placeholder="Country of residence*"
+            class="border-black/50 border rounded-full p-4"
+          />
+          <input
+            type="text"
+            placeholder="Sex*"
+            class="border-black/50 border rounded-full p-4"
+          />
+          <input
+            type="text"
+            placeholder="One single/family"
+            class="border-black/50 border rounded-full p-4"
+          />
+          <input
+            type="text"
+            placeholder="Phone*"
+            class="border-black/50 border rounded-full p-4"
+          />
+          <input
+            type="text"
+            placeholder="Email*"
+            class="border-black/50 border rounded-full p-4"
+          />
+          <textarea
+            class="border-black/50 border rounded-2xl p-4 min-h-40"
+            placeholder="Your message..."
+            name=""
+            id=""
+          ></textarea>
+          <div class="flex items-center justify-end">
+            <button
+              class="h-10 min-w-64 rounded-full bg-darkyellow text-white transition-all duration-200 hover:text-yellow-100 font-semibold text-[16px] text-center"
+            >
+              Send
+            </button>
+
+            <div
+              class="border transition-all duration-200 cursor-pointer border-darkyellow hover:bg-yellow-500 rounded-full h-10 w-10 flex items-center justify-center"
+            >
+              <a href="#">
+                <img
+                  class=""
+                  src="./images/headerimages/arrowicon.png"
+                  alt="Icon"
+                  height="24px"
+                  width="24px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div
+          class="bg-darkyellow flex flex-col items-center justify-center md:p-20 p-10"
+        >
+          <h1
+            class="text-white font-[500] lg:text-[80px] md:text-5xl text-3xl text-center m-10"
+          >
+            Book a consultation <span class="italic">today</span>
+          </h1>
+          <p class="text-white text-center sm:text-[16px] text-sm font-normal">
+            In eu orci massa velit odio. Pretium nunc consectetur morbi
+            penatibus lectus sed. <br />
+            Eu id arcu vulputate blandit. Cursus egestas faucibus neque mattis.
+          </p>
+          <button
+            class="border mt-6 border-white text-white hover:bg-white hover:text-darkyellow transition-all duration-200 cursor-pointer h-10 w-28 font-semibold text-[16px] rounded-full"
+          >
+            Contact
+          </button>
+        </div>
+      </section>
+
+       <!-- Footer -->
+       <footer class=" bg-darkgary ">
+        <div class=" lg:flex lg:p-16 md:p-6 p-16 justify-between space-y-20 lg:space-y-0">
+          <div class=" space-y-5">
+            <a href="#" class="space-y-5 flex flex-col  items-center md:items-start">
+              <div class="flex items-center  gap-2">
+                <img
+                  src="./images/whitelogo.png"
+                  alt="Logo"
+                  height="47px"
+                  width="32px"
+                />
+                <h1 class=" font-semibold text-sm leading-snug text-white">
+                  vanuatu <br />
+                  cbi <br />
+                  passport
+                </h1>
+              </div>
+
+              <p class="text-white/30 text-center md:text-start">
+                Vanuatu Citizenship, a leader in solar <br> panels services with over
+                25+ years of <br> experience, continues to excel and evolve in the
+                industry.
+              </p>
+
+              <div class="flex justify-center md:justify-start">
+                <ul class="flex  gap-5">
+                  <li>
+                    <a href="#">
+                      <img
+                        src="./images/footericons/twitter1.png"
+                        alt="Icon"
+                        height="40px"
+                        width="40px"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="./images/footericons/wattsapp2.png"
+                        alt="Icon"
+                        height="40px"
+                        width="40px"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="./images/footericons/message3.png"
+                        alt="Icon"
+                        height="40px"
+                        width="40px"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+          <div class=" md:flex text-center md:space-x-16 lg:space-x-10 space-y-10 md:space-y-0">
+            <ul class="text-white space-y-4">
+              <li class="text-white/40">Quick Links</li>
+              <li class="hover:text-darkyellow" ><a href="#">Citizenship</a></li>
+              <li class="hover:text-darkyellow" ><a href="#">Blog</a></li>
+              <li class="hover:text-darkyellow"><a href="#">About Us</a></li>
+              <li class="hover:text-darkyellow"><a href="#">Contact</a></li>
+              <li class="hover:text-darkyellow"><a href="#">FAQ</a></li>
+            </ul>
+
+            <ul class="text-white space-y-8 md:space-y-4 flex flex-col items-center md:flex-none">
+              <li class="text-white/40">Company</li>
+              <li class="flex gap-3">
+                <img
+                  height="18"
+                  width="18"
+                  src="./images/footericons/phone.png"
+                  alt=""
+                /><a class="hover:text-darkyellow" href="#">[+01] 334-998-0934</a>
+              </li>
+              <li class="flex gap-3">
+                <img
+                  height="18"
+                  width="18"
+                  src="./images/footericons/mail.png"
+                  alt=""
+                /><a class="hover:text-darkyellow" href="#">www.highpro@example.com</a>
+              </li>
+              <li class="flex gap-3 items-center">
+                <div>
+                  <img
+                    height="24"
+                    width="24"
+                    src="./images/footericons/locationimg.png"
+                    alt=""
+                  />
+                </div>
+                <a href="#" class="hover:text-darkyellow"
+                  >Street no. 123, Cempaka Village,<br />
+                  Harmoni Flowers, Zip Code 45678</a
+                >
+              </li>
+            </ul>
+
+            <div class="space-y-5 md:w-[330px] ">
+              <h3 class="text-white/40">Subscribe</h3>
+              <div class="bg-white flex  rounded-full relative p-2">
+                <input
+                  class="mr-10 rounded-full text-sm md:text-lg"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="enter your email"
+                />
+                <button
+                  class="bg-darkyellow rounded-r-full right-0 absolute text-white md:font-[500] md:text-[16px] text-xs h-full top-0 p-2"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="  md:border-t-[1px] border-white/30 md:flex md:flex-row-reverse space-y-6  p-4 md:p-6 md:space-y-0 items-center justify-between ">
+      
+          <div class="text-white/40 font-normal text-sm flex gap-1  justify-center">
+            <h3 >
+              <a
+                href="#"
+                class="hover:text-darkyellow transition-all duration-200 cursor-pointer"
+                >Terms & Conditions</a
+              >
+            </h3>
+            |
+            <h3>
+              <a
+                href="#"
+                class="hover:text-darkyellow transition-all duration-200 cursor-pointer"
+                >Privacy Policy</a
+              >
+            </h3>
+          </div>
+
+          <h3 class="text-white/40 font-normal text-sm text-center">
+            ©2025 Vanuatu Citizenship All rights reserved
+          </h3>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
